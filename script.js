@@ -1,12 +1,12 @@
 
     // Select the display input
-    const display = document.querySelector('input[name="display"]');
+    var display = document.querySelector('input[name="display"]');
     // Select all the buttons
-    const buttons = document.querySelectorAll('input[type="button"]');
+    var buttons = document.querySelectorAll('input[type="button"]');
 
     buttons.forEach(button => {
         button.addEventListener('click', (e) => {
-            const value = e.target.value;
+            var value = e.target.value;
 
             if (value === 'AC') {
                 // Clear display
